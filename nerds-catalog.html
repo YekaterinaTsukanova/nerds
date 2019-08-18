@@ -9,13 +9,12 @@
 </head>
 <body>
 <header class="main-header">
-	
 	<nav>
 		<ul class="main-menu">	
 			<li><a href="nerds-index.html"><img src="svg/nerds-logo.svg" alt="logo"></a></li>
 			<li><a href="#">Студия</a></li>
 			<li><a href="#">Клиенты</a></li>
-			<li><a href="#">Магазин</a></li>
+			<li><a href="nerds-catalog.html">Магазин</a></li>
 			<li><a href="#">Контакты</a></li>
 			<li><a href="#">Корзина</a></li>
 		</ul>
@@ -30,30 +29,43 @@
 
 	<aside>
 		<form class="aside-form">
-				<label>Стоимость</label>
+			<fieldset>
+				<legend>Стоимость</legend>
 				<input type="range" name="price" max="15000" min="0" step="100">
-			
-				<label>Сетка</label>
+			</fieldset>
+			<fieldset>
+				<legend>Сетка:</legend>
 				<label>Адаптивная
-				<input type="radio" name="adaptive"></label>
+					<input type="radio" name="radio" value="adaptive" checked>
+				</label>
 				<label>Фиксированная
-				<input type="radio" name="fix"></label>
+					<input type="radio" name="radio" value="fix">
+				</label>
 				<label>Резиновая
-				<input type="radio" name="rubber"></label>
-
-				<label>Особенности</label>
+					<input type="radio" name="radio" value="rubber">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Особенности</legend>
 				<label>Слайдер
-				<input type="checkbox" name="slyder"></label>
+					<input type="checkbox" name="slyder">
+				</label>
 				<label>Блок преимуществ
-				<input type="checkbox" name="block-of features"></label>
+					<input type="checkbox" name="block-of features">
+				</label>
 				<label>Новости
-				<input type="checkbox" name="news"></label>
+					<input type="checkbox" name="news">
+				</label>
 				<label>Галерея
-				<input type="checkbox" name="galery"></label>
+					<input type="checkbox" name="galery">
+				</label>
 				<label>Корзина
-				<input type="checkbox" name="basket"></label>
+					<input type="checkbox" name="basket">
+				</label>
 				<label>Сетка
-				<input type="submit" name="show" value="Показать"></label>
+					<input type="submit" name="show" value="Показать">
+				</label>
+			</fieldset>
 		</form>
 	</aside>
 
@@ -71,10 +83,10 @@
 			<li>Вниз</li>
 			<li>Вверх</li>
 		</ul>
-<!--100%?-->
+
 		<div class="pattern">
 			<img src="#" alt="Шаблон Sedona">
-			<div>
+			<div class="hover-visible">
 				<h4>Sedona</h4>
 				<p>Информационный сайт для туристов</p>
 				<a href="#">9 900 Руб.</a>
@@ -82,7 +94,7 @@
 		</div>
 		<div class="pattern">
 			<img src="#" alt="Шаблон Pink">
-			<div>
+			<div class="hover-visible">
 				<h4>Pink app</h4>
 				<p>Продуктовый лендинг приложения для IOS и Android</p>
 				<a href="#">9 900 Руб.</a>
@@ -90,7 +102,7 @@
 		</div>
 		<div class="pattern">
 			<img src="#" alt="Шаблон Borodinski">
-			<div>
+			<div class="hover-visible">
 				<h4>Barbershop</h4>
 				<p>Сайт салона красоты. Для мжчин, да.</p>
 				<a href="#">9 900 Руб.</a>
@@ -98,7 +110,7 @@
 		</div>
 		<div class="pattern">
 			<img src="#" alt="Шаблон Mishka">
-			<div>
+			<div class="hover-visible">
 				<h4>Mishka</h4>
 				<p>Интернет-магазин вязаных игрушек</p>
 				<a href="#">9 900 Руб.</a>
@@ -106,7 +118,7 @@
 		</div>
 		<div class="pattern">
 			<img src="#" alt="Шаблон A+">
-			<div>
+			<div class="hover-visible"><div>
 				<h4>A plus</h4>
 				<p>Лендинг курсов повышения квалификации</p>
 				<a href="#">9 900 Руб.</a>
@@ -114,7 +126,7 @@
 		</div>
 		<div class="pattern">
 			<img src="#" alt="Шаблон Кваст">
-			<div>
+			<div class="hover-visible">
 				<h4>Кваст</h4>
 				<p>Промо-сайт производителя крафтового кваса</p>
 				<a href="#">9 900 Руб.</a>
@@ -143,22 +155,13 @@
 			<label>Текст письма:
 				<textarea placeholder="В свободной форме" rows="5"></textarea>
 			</label>
-			<button class="btn">Отправить</button>
+			<button type="submit" class="btn">Отправить</button>
 		</form>
+		<button type="button" class="close-btn">Закрыть форму отправки письма</button>
 	</div>
 
 </main>
 <footer class="page-footer">
-
-	<section class="adress">
-		<h3 class="hidden">Наш адрес</h3>
-		<div>
-			<b>Nёrds design studio</b>
-			<p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-			<p>тел. +7 (812) 275-75-75</p>
-			<a href="#" class="btn write-to-us"></a>
-		</div>
-	</section>
 
 	<div class="be-frends">
 		<h3>Давайте дружить, это выгодно!</h3>
@@ -166,9 +169,9 @@
 	</div>
 	<div class="social-btn">
 		<ul>
-			<li><a href="#">VK</a></li>
-			<li><a href="#">FB</a></li>
-			<li><a href="#">Insta</a></li>
+			<li><a href="#">Вконтакте</a></li>
+			<li><a href="#">Фэйсбук</a></li>
+			<li><a href="#">Инстарамм</a></li>
 		</ul>
 	</div>
 
