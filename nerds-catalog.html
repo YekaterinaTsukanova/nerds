@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Nerds</title>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="main-header">
+	
+	<nav>
+		<ul class="main-menu">	
+			<li><a href="nerds-index.html"><img src="svg/nerds-logo.svg" alt="logo"></a></li>
+			<li><a href="#">Студия</a></li>
+			<li><a href="#">Клиенты</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+	</nav>
+
+</header>
+<main>
+
+	<div class="catalog-headline">
+		<h1>Магазин готовых шаблонов</h1>
+	</div>
+
+	<aside>
+		<form class="aside-form">
+				<label>Стоимость</label>
+				<input type="range" name="price" max="15000" min="0" step="100">
+			
+				<label>Сетка</label>
+				<label>Адаптивная
+				<input type="radio" name="adaptive"></label>
+				<label>Фиксированная
+				<input type="radio" name="fix"></label>
+				<label>Резиновая
+				<input type="radio" name="rubber"></label>
+
+				<label>Особенности</label>
+				<label>Слайдер
+				<input type="checkbox" name="slyder"></label>
+				<label>Блок преимуществ
+				<input type="checkbox" name="block-of features"></label>
+				<label>Новости
+				<input type="checkbox" name="news"></label>
+				<label>Галерея
+				<input type="checkbox" name="galery"></label>
+				<label>Корзина
+				<input type="checkbox" name="basket"></label>
+				<label>Сетка
+				<input type="submit" name="show" value="Показать"></label>
+		</form>
+	</aside>
+
+	<section>
+		<h3 class="hidden">Шаблоны</h3>
+		<b>Сортировать</b>
+
+		<ul class="sort">
+			<li>По цене</li>
+			<li>По типу</li>
+			<li>По названию</li>
+		</ul>
+
+		<ul class="sort-up-down">
+			<li>Вниз</li>
+			<li>Вверх</li>
+		</ul>
+<!--100%?-->
+		<div class="pattern">
+			<img src="#" alt="Шаблон Sedona">
+			<div>
+				<h4>Sedona</h4>
+				<p>Информационный сайт для туристов</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+		<div class="pattern">
+			<img src="#" alt="Шаблон Pink">
+			<div>
+				<h4>Pink app</h4>
+				<p>Продуктовый лендинг приложения для IOS и Android</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+		<div class="pattern">
+			<img src="#" alt="Шаблон Borodinski">
+			<div>
+				<h4>Barbershop</h4>
+				<p>Сайт салона красоты. Для мжчин, да.</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+		<div class="pattern">
+			<img src="#" alt="Шаблон Mishka">
+			<div>
+				<h4>Mishka</h4>
+				<p>Интернет-магазин вязаных игрушек</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+		<div class="pattern">
+			<img src="#" alt="Шаблон A+">
+			<div>
+				<h4>A plus</h4>
+				<p>Лендинг курсов повышения квалификации</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+		<div class="pattern">
+			<img src="#" alt="Шаблон Кваст">
+			<div>
+				<h4>Кваст</h4>
+				<p>Промо-сайт производителя крафтового кваса</p>
+				<a href="#">9 900 Руб.</a>
+			</div>
+		</div>
+
+		<nav>
+			<ul class="pages-list">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">Следующая</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<div class="form-write-to-us">
+		<h4>Напишите нам</h4>
+		<form>
+			<label>Ваше имя
+				<input type="text" name="name" placeholder="Имя Фамилия">
+			</label>
+			<label>Ваш e-mail:
+				<input type="email" name="email" placeholder="email@example.com">
+			</label>
+			<label>Текст письма:
+				<textarea placeholder="В свободной форме" rows="5"></textarea>
+			</label>
+			<button class="btn">Отправить</button>
+		</form>
+	</div>
+
+</main>
+<footer class="page-footer">
+
+	<section class="adress">
+		<h3 class="hidden">Наш адрес</h3>
+		<div>
+			<b>Nёrds design studio</b>
+			<p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+			<p>тел. +7 (812) 275-75-75</p>
+			<a href="#" class="btn write-to-us"></a>
+		</div>
+	</section>
+
+	<div class="be-frends">
+		<h3>Давайте дружить, это выгодно!</h3>
+		<p>Скидка 10% для друзей из социальных сетей.</p>
+	</div>
+	<div class="social-btn">
+		<ul>
+			<li><a href="#">VK</a></li>
+			<li><a href="#">FB</a></li>
+			<li><a href="#">Insta</a></li>
+		</ul>
+	</div>
+
+</footer>
+</body>
+</html>
