@@ -2,15 +2,14 @@
 <html lang="ru">
 <head>
 	<title>Nerds</title>
-
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
 	<nav>
-		<ul class="main-menu">	
+		<ul class="main-menu flex-row">	
 			<li><a href="nerds-index.html"><img src="svg/nerds-logo.svg" alt="logo"></a></li>
 			<li><a href="#">Студия</a></li>
 			<li><a href="#">Клиенты</a></li>
@@ -22,107 +21,113 @@
 
 </header>
 <main>
-	<div class="index-main-carousel">
-		<div class="carousel-1">
-			<b>Долго, дорого, скурпулезно.</b>
-			<p>Математически выведенный дизайн для вашего сайта или мобильного приложения.</p>
-			<a href="#" class=" btn btn-know-more">Узнать больше</a>
+	<div class="index-main-carousel container">
+		<div class="flex-row">
+			<div class="carousel flex-column">
+				<b class="carousel-h">Долго, дорого, скурпулезно.</b>
+				<p>Математически выведенный дизайн для вашего сайта или мобильного приложения.</p>
+				<a href="#" class=" btn btn-know-more">Узнать больше</a>
+			</div>
+			<div class="carousel-img">
+			</div>
 		</div>
 
-<!--img-->
 
-		<div class="carousel-2">
-			<b>Любим математику как никто другой</b>
-			<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-			<a href="#" class=" btn btn-know-more">Узнать больше</a>
+<!--	<div>
+			<div class="carousel flex-column">
+				<b class="carousel-h">Любим математику как никто другой</b>
+				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+				<a href="#" class=" btn btn-know-more">Узнать больше</a>
+			</div>
 		</div>
-<!--img-->
 
-		<div class="carousel-3">
-			<b>Только ночь, только хардкор</b>
-			<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-			<a href="#" class=" btn btn-know-more">Узнать больше</a>
+		<div>
+			<div class="carousel flex-column">
+				<b class="carousel-h">Только ночь, только хардкор</b>
+				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+				<a href="#" class=" btn btn-know-more">Узнать больше</a>
+			</div>
 		</div>
-<!--img-->
+-->
 	</div>
 
-<!--carousel-->
-	<section class="offer">
+	<section class="offer  container">
 		<h2 class="hidden">Услуги</h2>
-		<ul class="offer-list">
-			<li>
-				<img src="#" alt="Веб-сайты">
+		<ul class="offer-list flex-row">
+			<li class="flex-column">
 				<h3>Веб-сайты</h3>
 				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<a href="#" class="btn bth-order">Заказать</a>
+				<a href="#" class="btn btn-order">Заказать</a>
 			</li>
-			<li>
-				<img src="#" alt="Приложения">
+			<li class="flex-column">
 				<h3>Приложения</h3>
 				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a href="#" class="btn bth-order">Заказать</a>
+				<a href="#" class="btn btn-order">Заказать</a>
 			</li>
-			<li>
-				<img src="#" alt="Презентации">
+			<li class="flex-column">
 				<h3>Презентации</h3>
 				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				<a href="#" class="btn bth-order">Заказать</a>
+				<a href="#" class="btn btn-order">Заказать</a>
 			</li>
 		</ul>
 	</section>
 
-	<section class="about-us">
-		<h2 class="hidden">Кто мы</h2>
-		<b>Мы — маленькая, но гордая
-дизайн-студия из Краснодара. </b>
-		<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-превыше креатива. Работаем не покладая рук, как роботы.</p>
-		<p>Выполняем заказы на разработку:</p>
-		<ul class="about-us-offer-list">
-			<li>Веб-сайтов любой сложности</li>
-			<li>Мобильных приложений для iOS и Android</li>
-			<li>Слайдшоу и видео для корпоративных презентаций</li>
-		</ul>
-	</section>
+	<div class="flex-row  container">
+		<section class="about-us">
+			<h2 class="hidden">Кто мы</h2>
+			<b class="about-us-h">Мы — маленькая, но гордая
+	дизайн-студия из Краснодара. </b>
+			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+	превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<b>Выполняем заказы на разработку:</b>
+			<ul class="about-us-offer-list">
+				<li>Веб-сайтов любой сложности</li>
+				<li>Мобильных приложений для iOS и Android</li>
+				<li>Слайдшоу и видео для корпоративных презентаций</li>
+			</ul>
+		</section>
 
-	<section class="condition">
-		<h3 class="hidden">Условия сотрудничества</h3>
-		<p>С 2004 года любим точность во всем:</p>
-		<table>
-			<tr>
-				<td>146<sup>%</sup></td>
-				<td>100<sup>%</sup></td>
-				<td>50<sup>%</sup></td>
-			</tr>
-			<tr>
-				<td>Уровень самоотдачи</td>
-				<td>Соблюдение сроков</td>
-				<td>Минимальная предоплата</td>
-			</tr>
-		</table>
-	</section>
+		<section class="condition">
+			<h3 class="hidden">Условия сотрудничества</h3>
+			<b>С 2004 года любим точность во всем:</b>
+			<table>
+				<tr>
+					<td>146<sup>%</sup></td>
+					<td>100<sup>%</sup></td>
+					<td>50<sup>%</sup></td>
+				</tr>
+				<tr>
+					<td>Уровень самоотдачи</td>
+					<td>Соблюдение сроков</td>
+					<td>Минимальная предоплата</td>
+				</tr>
+			</table>
+		</section>
+	</div>
 
-	<section class="labels">
+	<section class="labels container"> 
 		<h3 class="hidden">Наши пртнеры</h3>
-		<ul class="labels-list">
-			<li><img src="#" alt="html academy"></li>
-			<li><img src="#" alt="borodinski"></li>
-			<li><img src="#" alt="pink"></li>
-			<li><img src="#" alt="mishka"></li>
+		<ul class="labels-list flex-row">
+			<li><img src="img/logo-1.png" alt="html academy"></li>
+			<li><img src="img/logo-2.png" alt="borodinski"></li>
+			<li><img src="img/logo-3.png" alt="pink"></li>
+			<li><img src="img/logo-4.png" alt="mishka"></li>
 		</ul>
 	</section>
 
-	<section class="adress">
-		<h3 class="hidden">Наш адрес</h3>
-		<div>
-			<b>Nёrds design studio</b>
-			<p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-			<p>тел. +7 (812) 275-75-75</p>
-			<a href="#" class="btn write-to-us">Напишите нам</a>
+	<section class="adress-map">
+		<div class="adress">
+			<h3 class="hidden">Наш адрес</h3>
+			<div class="flex-column">
+				<b>Nёrds design studio</b>
+				<p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a href="#" class="btn write-to-us">Напишите нам</a>
+			</div>
 		</div>
 	</section>
 
-	<div class="form-write-to-us">
+	<div class="form-write-to-us visually-hidden">
 		<h4>Напишите нам</h4>
 		<form>
 			<label>Ваше имя
@@ -140,19 +145,19 @@
 	</div>
 
 </main>
-<footer class="page-footer">
+<footer class="page-footer flex-row container">
 
-	<div class="be-frends">
-		<h3>Давайте дружить, это выгодно!</h3>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
-	</div>
-	<div class="social-btn">
-		<ul>
-			<li><a href="#">Вконтакте</a></li>
-			<li><a href="#">Фэйсбук</a></li>
-			<li><a href="#">Инстарамм</a></li>
-		</ul>
-	</div>
+		<div class="be-frends">
+			<h3>Давайте дружить, это выгодно!</h3>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+		<div class="social-btn">
+			<ul class="flex-row">
+				<li><a href="#">Вконтакте</a></li>
+				<li><a href="#">Фэйсбук</a></li>
+				<li><a href="#">Инстарамм</a></li>
+			</ul>
+		</div>
 
 </footer>
 </body>

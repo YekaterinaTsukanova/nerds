@@ -2,15 +2,14 @@
 <html lang="ru">
 <head>
 	<title>Nerds</title>
-
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
 	<nav>
-		<ul class="main-menu">	
+		<ul class="main-menu flex-row">	
 			<li><a href="nerds-index.html"><img src="svg/nerds-logo.svg" alt="logo"></a></li>
 			<li><a href="#">Студия</a></li>
 			<li><a href="#">Клиенты</a></li>
@@ -21,129 +20,136 @@
 	</nav>
 
 </header>
-<main>
+<main class="container">
 
 	<div class="catalog-headline">
 		<h1>Магазин готовых шаблонов</h1>
 	</div>
 
-	<aside>
-		<form class="aside-form">
-			<fieldset>
-				<legend>Стоимость</legend>
-				<input type="range" name="price" max="15000" min="0" step="100">
-			</fieldset>
-			<fieldset>
-				<legend>Сетка:</legend>
-				<label>Адаптивная
-					<input type="radio" name="radio" value="adaptive" checked>
-				</label>
-				<label>Фиксированная
-					<input type="radio" name="radio" value="fix">
-				</label>
-				<label>Резиновая
-					<input type="radio" name="radio" value="rubber">
-				</label>
-			</fieldset>
-			<fieldset>
-				<legend>Особенности</legend>
-				<label>Слайдер
-					<input type="checkbox" name="slyder">
-				</label>
-				<label>Блок преимуществ
-					<input type="checkbox" name="block-of features">
-				</label>
-				<label>Новости
-					<input type="checkbox" name="news">
-				</label>
-				<label>Галерея
-					<input type="checkbox" name="galery">
-				</label>
-				<label>Корзина
-					<input type="checkbox" name="basket">
-				</label>
-				<label>Сетка
-					<input type="submit" name="show" value="Показать">
-				</label>
-			</fieldset>
-		</form>
-	</aside>
+	<div class="flex-row">
+		<aside>
+			<form class="aside-form flex-column">
+				<fieldset>
+					<legend>Стоимость</legend>
+					<input type="range" name="price" max="15000" min="0" step="100">
+				</fieldset>
+				<fieldset class="flex-column">
+					<legend>Сетка:</legend>
+					<label>
+						<input type="radio" name="radio" value="adaptive" checked>Адаптивная
+					</label>
+					<label>
+						<input type="radio" name="radio" value="fix">Фиксированная
+					</label>
+					<label>
+						<input type="radio" name="radio" value="rubber">Резиновая
+					</label>
+				</fieldset>
+				<fieldset class="flex-column">
+					<legend>Особенности</legend>
+					<label>
+						<input type="checkbox" name="slyder" checked>Слайдер
+					</label>
+					<label>
+						<input type="checkbox" name="block-of features">Блок преимуществ
+					</label>
+					<label>
+						<input type="checkbox" name="news" checked>Новости
+					</label>
+					<label>
+						<input type="checkbox" name="galery">Галерея
+					</label>
+					<label>
+						<input type="checkbox" name="basket">Корзина
+					</label>
+					<label>
+						<input type="submit" name="show" value="Показать">
+					</label>
+				</fieldset>
+			</form>
+		</aside>
 
-	<section>
-		<h3 class="hidden">Шаблоны</h3>
-		<b>Сортировать</b>
+		<section>
+			<h3 class="hidden">Шаблоны</h3>
+			<b>Сортировать</b>
 
-		<ul class="sort">
-			<li>По цене</li>
-			<li>По типу</li>
-			<li>По названию</li>
-		</ul>
+			
+			<div class="flex-row">
+				<ul class="sort flex-row">
+					<li>По цене</li>
+					<li>По типу</li>
+					<li>По названию</li>
+				</ul>
 
-		<ul class="sort-up-down">
-			<li>Вниз</li>
-			<li>Вверх</li>
-		</ul>
+				<ul class="sort-up-down flex-row">
+					<li>Вниз</li>
+					<li>Вверх</li>
+				</ul>
+			</div>
 
-		<div class="pattern">
-			<img src="#" alt="Шаблон Sedona">
-			<div class="hover-visible">
-				<h4>Sedona</h4>
-				<p>Информационный сайт для туристов</p>
-				<a href="#">9 900 Руб.</a>
+			<div class="flex-row wrap">
+				<div class="pattern">
+					<img src="#" alt="Шаблон Sedona">
+					<div class="hover-visible">
+						<h4>Sedona</h4>
+						<p>Информационный сайт для туристов</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
+				<div class="pattern">
+					<img src="#" alt="Шаблон Pink">
+					<div class="hover-visible">
+						<h4>Pink app</h4>
+						<p>Продуктовый лендинг приложения для IOS и Android</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
+				<div class="pattern">
+					<img src="#" alt="Шаблон Borodinski">
+					<div class="hover-visible">
+						<h4>Barbershop</h4>
+						<p>Сайт салона красоты. Для мжчин, да.</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
+				<div class="pattern">
+					<img src="#" alt="Шаблон Mishka">
+					<div class="hover-visible">
+						<h4>Mishka</h4>
+						<p>Интернет-магазин вязаных игрушек</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
+				<div class="pattern">
+					<img src="#" alt="Шаблон A+">
+					<div class="hover-visible"><div>
+						<h4>A plus</h4>
+						<p>Лендинг курсов повышения квалификации</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
+				<div class="pattern">
+					<img src="#" alt="Шаблон Кваст">
+					<div class="hover-visible">
+						<h4>Кваст</h4>
+						<p>Промо-сайт производителя крафтового кваса</p>
+						<a href="#">9 900 Руб.</a>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="pattern">
-			<img src="#" alt="Шаблон Pink">
-			<div class="hover-visible">
-				<h4>Pink app</h4>
-				<p>Продуктовый лендинг приложения для IOS и Android</p>
-				<a href="#">9 900 Руб.</a>
-			</div>
-		</div>
-		<div class="pattern">
-			<img src="#" alt="Шаблон Borodinski">
-			<div class="hover-visible">
-				<h4>Barbershop</h4>
-				<p>Сайт салона красоты. Для мжчин, да.</p>
-				<a href="#">9 900 Руб.</a>
-			</div>
-		</div>
-		<div class="pattern">
-			<img src="#" alt="Шаблон Mishka">
-			<div class="hover-visible">
-				<h4>Mishka</h4>
-				<p>Интернет-магазин вязаных игрушек</p>
-				<a href="#">9 900 Руб.</a>
-			</div>
-		</div>
-		<div class="pattern">
-			<img src="#" alt="Шаблон A+">
-			<div class="hover-visible"><div>
-				<h4>A plus</h4>
-				<p>Лендинг курсов повышения квалификации</p>
-				<a href="#">9 900 Руб.</a>
-			</div>
-		</div>
-		<div class="pattern">
-			<img src="#" alt="Шаблон Кваст">
-			<div class="hover-visible">
-				<h4>Кваст</h4>
-				<p>Промо-сайт производителя крафтового кваса</p>
-				<a href="#">9 900 Руб.</a>
-			</div>
-		</div>
 
-		<nav>
-			<ul class="pages-list">
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">Следующая</a></li>
-			</ul>
-		</nav>
-	</section>
+			<nav>
+				<ul class="pages-list flex-row">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">Следующая</a></li>
+				</ul>
+			</nav>
+		</section>
+	</div>
 
-	<div class="form-write-to-us">
+	<div class="form-write-to-us visually-hidden">
 		<h4>Напишите нам</h4>
 		<form>
 			<label>Ваше имя
@@ -161,14 +167,14 @@
 	</div>
 
 </main>
-<footer class="page-footer">
+<footer class="page-footer flex-row container">
 
 	<div class="be-frends">
 		<h3>Давайте дружить, это выгодно!</h3>
 		<p>Скидка 10% для друзей из социальных сетей.</p>
 	</div>
 	<div class="social-btn">
-		<ul>
+		<ul class="flex-row">
 			<li><a href="#">Вконтакте</a></li>
 			<li><a href="#">Фэйсбук</a></li>
 			<li><a href="#">Инстарамм</a></li>
