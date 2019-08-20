@@ -12,6 +12,9 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+h1{
+	margin:0;
+}
 .main-header nav,
 .offer h3{
 	line-height: 30px;
@@ -278,4 +281,56 @@ justify-content: space-between;
 .write-to-us{
 	width: 230px;
 	margin-top: 15px;
+}
+.main-menu .here-now{
+	border-bottom: 2px solid #fb565a;
+}
+.catalog-headline{
+	background-color: #eee;
+	text-align: center;
+	vertical-align: middle;
+	height: 155px;
+	padding-top: 75px;
+}
+.pattern{
+	padding-top: 40px;
+	height: 575px;
+	width: 360px;
+}
+.flex-row.wrap{
+	justify-content: space-around;
+}
+
+.pattern .btn{
+	width: 200px;
+}
+.pattern img{
+	position: absolute;
+}
+.hover-visible{
+	position: relative;
+	top:305px;
+	width: auto;
+	height: 230px;
+	background-color: #eee;
+	align-items: center;
+	padding: 0 80px 40px;
+	justify-content: space-between;
+	display: none;
+
+}
+.pattern:hover .hover-visible{
+	display:flex;
+	z-index: 2;
+}
+.sort-by,
+.sort-by div{
+	justify-content: space-between;
+}
+.sort-by{
+	padding: 60px 40px;
+}
+.sort,
+.sort-up-down{
+	justify-content: space-around;
 }
