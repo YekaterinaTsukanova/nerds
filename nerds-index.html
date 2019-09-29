@@ -22,33 +22,45 @@
 </header>
 <main>
 	<div class="index-main-carousel container">
-		<div class="flex-row">
-			<div class="carousel flex-column">
-				<b class="carousel-h">Долго, дорого, скурпулезно.</b>
-				<p>Математически выведенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a href="#" class=" btn btn-know-more">Узнать больше</a>
+		<div class="relative">
+			<form class="controlers flex-row">
+				<input type="radio" name="controler" value="first" id="first" class="hidden" checked>
+				<label for="first">1</label>
+				<input type="radio" name="controler" value="second" id="second" class="hidden">
+				<label for="second">2</label>
+				<input type="radio" name="controler" value="third" id="third" class="hidden">
+				<label for="third">3</label>
+			</form>
+			<div class="flex-row carousel showing">
+				<div class="flex-column">
+					<b class="carousel-h">Долго, дорого, скурпулезно.</b>
+					<p>Математически выведенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a href="#" class=" btn btn-know-more">Узнать больше</a>
+				</div>
+				<div class="carousel-img">
+				</div>
 			</div>
-			<div class="carousel-img">
+			<div class="flex-row carousel ">
+				<div class="flex-column">
+					<b class="carousel-h">Любим математику как никто другой</b>
+					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a href="#" class=" btn btn-know-more">Узнать больше</a>
+				</div>
+				<div class="carousel-img-2">
+				</div>
 			</div>
+			<div class="flex-row carousel">
+				<div class="flex-column">
+					<b class="carousel-h">Только ночь, только хардкор</b>
+					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a href="#" class=" btn btn-know-more">Узнать больше</a>
+				</div>
+				<div class="carousel-img-3">
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		
 		</div>
-
-
-<!--	<div>
-			<div class="carousel flex-column">
-				<b class="carousel-h">Любим математику как никто другой</b>
-				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<a href="#" class=" btn btn-know-more">Узнать больше</a>
-			</div>
-		</div>
-
-		<div>
-			<div class="carousel flex-column">
-				<b class="carousel-h">Только ночь, только хардкор</b>
-				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<a href="#" class=" btn btn-know-more">Узнать больше</a>
-			</div>
-		</div>
--->
 	</div>
 
 	<section class="offer  container">
@@ -127,22 +139,28 @@
 		</div>
 	</section>
 
-	<div class="form-write-to-us visually-hidden">
+	<div class="form-write-to-us hidden">
 		<h4>Напишите нам</h4>
-		<form>
-			<label>Ваше имя
-				<input type="text" name="name" placeholder="Имя Фамилия">
-			</label>
-			<label>Ваш e-mail:
-				<input type="email" name="email" placeholder="email@example.com">
-			</label>
-			<label>Текст письма:
-				<textarea placeholder="В свободной форме" rows="5"></textarea>
-			</label>
+		<form class="flex-column">
+			<div class="flex-row name-mail">
+				<div class="flex-column">
+				<label for="name">Ваше имя</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				</div>
+				<div class="flex-column">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com">
+				</div>
+			</div>
+			<label for="textarea">Текст письма:</label>
+				<textarea placeholder="В свободной форме" rows="5" id="textarea"></textarea>
+			
 			<button type="submit" class="btn">Отправить</button>
 		</form>
 		<button type="button" class="close-btn">Закрыть форму отправки письма</button>
 	</div>
+
+	
 
 </main>
 <footer class="page-footer flex-row container">
@@ -160,5 +178,22 @@
 		</div>
 
 </footer>
+<script>
+	var popup = document.querySelector('.form-write-to-us'); 
+	var open = document.querySelector('.btn.write-to-us');
+	var close = document.querySelector('.close-btn');
+
+	open.addEventListener('click', function(evt){
+		evt.preventDefault();
+		popup.classList.remove('hidden');
+
+	});
+	close.addEventListener('click', function(evt){
+		evt.preventDefault();
+		popup.classList.add('hidden');
+
+	});
+
+</script>
 </body>
 </html>
